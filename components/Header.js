@@ -1,14 +1,17 @@
 import React from 'react'
-import PortfolioLogo from '../public/assets/img/portfolio-logo.svg'
+import portfolioLogo from '../public/assets/img/portfolio-logo.svg'
+import Image from 'next/image'
 
 const Header = () => {
   return (
-    <div className='py-4 bg-black'>
+    <div className='py-4 px-8'>
 
-        <img src={PortfolioLogo}/> 
+        <Image 
+         src={portfolioLogo}
+         alt='The best logo I ever created'
 
+         /> 
 
-        
     </div>
   )
 }
