@@ -1,13 +1,13 @@
-import Head from 'next/head'
-import Header from '../components/Header'
+import Head from "next/head";
+import Header from "../components/Header";
+import ContactForm from "../components/ContactForm";
 
 export default function Home() {
   return (
+    <div>
+      <Header />
 
-    <div className='bg-black'>
-      <Header/>
+      <ContactForm/>
     </div>
-
-  )
-    
+  );
 }
