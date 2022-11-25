@@ -1,6 +1,6 @@
 import React from "react";
-import {useState} from 'react'
-import { Button } from "./Button";
+import {useState} from 'react';
+import { ButtonPrimary } from "./ButtonPrimary";
 
 export default function ContactForm() {
   const [fullName,setFullName] = useState('')
@@ -50,7 +50,7 @@ export default function ContactForm() {
         </div>
 
 
-        <Button 
+        <ButtonPrimary 
             label='Send'
             type='submit'
         />

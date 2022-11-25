@@ -6,7 +6,7 @@ import ContactForm from './ContactForm'
 
 const Header = () => {
   return (
-    <div className='py-4 px-24 bg-black flex justify-between items-center '>
+    <div className='py-4 px-24 bg-gray-900 flex justify-between items-center '>
 
         <Image 
          src={portfolioLogo}
