@@ -5,7 +5,7 @@ import Cards from "./ContributionCard";
 
 export default function ProjectSection() {
   return (
-    <div className="flex flex-col items-center relative justify-center gap-8 text-center text-gray-50 bg-gray-900 py-48 px-48">
+    <div className="flex flex-col items-center relative justify-center gap-8 text-center text-zinc-50 bg-zinc-800 py-48 px-48">
       <motion.div
         animate={{
           scale: [1, 2, 2, 1, 1],

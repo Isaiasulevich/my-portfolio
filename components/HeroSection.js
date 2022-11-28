@@ -6,7 +6,7 @@ import bgHeroShape from "../public/assets/img/bg-shape-02.svg";
 
 export default function HeroSection() {
   return (
-    <div className=" flex flex-col items-center relative justify-center gap-8 text-center text-gray-50 bg-gray-900 py-48 px-48 bg-clip-border ">
+    <div className=" flex flex-col items-center relative justify-center gap-8 text-center text-zinc-50 bg-zinc-900 py-48 px-48 bg-clip-border ">
       {/* MAIN TEXT */}
 
       <motion.div

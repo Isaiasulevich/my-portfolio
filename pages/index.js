@@ -8,7 +8,7 @@ import ProjectSection from "../components/ProjectSection";
 
 export default function Home() {
   return (
-    <div className="bg-gray-900">
+    <div className="bg-zinc-900">
       <Header />
 
       <HeroSection/>
