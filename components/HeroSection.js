@@ -21,13 +21,13 @@ export default function HeroSection() {
         }}
       >
         <h1 className="font-bold text-5xl max-w-5xl">
-          I'm a UX/UI designer, passionate about design, tech and blockchain.
+          I&lsquo;m a UX/UI designer, passionate about design, tech and blockchain.
         </h1>
       </motion.div>
 
       <motion.div>
         <h1 className="font-medium text-xl max-w-2xl">
-          I'm super curious, proactive, and do things with passion. I learn most
+          I&lsquo;m super curious, proactive, and do things with passion. I learn most
           of the stuff in a self-taught way. By the way, this website was
           developed by me in Javascript 🤙🏽
         </h1>

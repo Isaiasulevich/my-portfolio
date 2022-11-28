@@ -1,16 +1,22 @@
 import React from "react";
-import bgHeroShape from "../public/assets/img/bg-shape-02.svg";
+import RainTree from "../public/assets/img/RainTree-visualization-thumb.png";
+import Image from "next/image";
 
 export default function ContributionCard () {
   return (
     <div>
       <div className="max-w-sm bg-zinc-50 border border-zinc-200 rounded-lg shadow-md dark:bg-zinc-800 dark:border-zinc-700">
         <a href="#">
-          <img
-            className="rounded-t-lg"
-            src={bgHeroShape}
-            alt=""
-          />
+          {/* TODO: CORRECT THIS  */}
+          <div className="max-w-sm">
+            <Image
+              width={300}
+              height={300}
+              className="rounded-t-lg object-cover"
+              src={RainTree}
+              alt="RainTree"
+            />
+          </div>
         </a>
         <div className="p-5">
           <a href="#">

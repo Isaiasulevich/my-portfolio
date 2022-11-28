@@ -13,7 +13,7 @@ export default function ContactForm() {
 
     <div className="flex items-center text-zinc-50 bg-zinc-900justify-center mx-24 mt-20">
       <form className="w-96 max-w-8xl">
-        <h1 className="font-medium text-3xl">Let's get in touch!</h1>
+        <h1 className="font-medium text-3xl">Let&#39;s get in touch!</h1>
 
         <div className="flex flex-col gap-2 mt-4">
           <label className="text-zinc-50 font-medium text-md">Name</label>
