@@ -1,34 +1,34 @@
 import React from "react";
-import RainTree from "../public/assets/img/RainTree-visualization-thumb.png";
 import Image from "next/image";
+import ButtonPrimary from "./ButtonPrimary";
 
-export default function ContributionCard () {
+export default function ContributionCard (prop) {
   return (
     <div>
-      <div className="max-w-sm bg-zinc-50 border border-zinc-200 rounded-lg shadow-md dark:bg-zinc-800 dark:border-zinc-700">
+      <div className="max-w-sm bg-zinc-50 rounded-lg  dark:bg-zinc-700 text-left">
         <a href="#">
-          {/* TODO: CORRECT THIS  */}
-          <div className="max-w-sm">
+          <div className="w-full">
             <Image
-              width={300}
-              height={300}
               className="rounded-t-lg object-cover"
-              src={RainTree}
+              src={prop.src}
               alt="RainTree"
             />
           </div>
         </a>
         <div className="p-5">
           <a href="#">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-Inc-900 dark:text-white">
-              RainTree Visualisation
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-zinc-900 dark:text-white">
+              {prop.title}
             </h5>
           </a>
           <p className="mb-3 font-normal text-zinc-700 dark:text-zinc-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
+            {prop.description}
           </p>
-          <a
+          <ButtonPrimary
+          label='Read more'
+          link='wwww.google.com'
+          />
+          {/* <a
             href="#"
             className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-zinc-50 bg-indigo-700 rounded-lg hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800"
           >
@@ -46,7 +46,7 @@ export default function ContributionCard () {
                 clipRule="evenodd"
               ></path>
             </svg>
-          </a>
+          </a> */}
         </div>
       </div>
     </div>

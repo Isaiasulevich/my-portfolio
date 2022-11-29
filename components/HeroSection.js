@@ -6,22 +6,28 @@ import bgHeroShape from "../public/assets/img/bg-shape-02.svg";
 
 export default function HeroSection() {
   return (
-    <div className=" flex flex-col items-center relative justify-center gap-8 text-center text-zinc-50 bg-zinc-900 py-48 px-48 bg-clip-border ">
+    <div className=" relative flex flex-col items-center relative justify-center gap-8 text-center text-zinc-50 bg-zinc-900 py-48 px-48 bg-clip-border bg-gradient-to-b from-zinc-900 to-zinc-800 ">
+
       {/* MAIN TEXT */}
 
       <motion.div
-        animate={{
-          scale: [1, 2, 2, 1, 1],
-          rotate: [0, 0, 270, 270, 0],
-        }}
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
         transition={{
-          delay: 0.5,
-          x: { duration: 1 },
-          default: { ease: "linear" },
+          default: {
+            duration: 0.3,
+            ease: [0, 0.71, 0.2, 1.01]
+          },
+          scale: {
+            type: "spring",
+            damping: 5,
+            stiffness: 100,
+            restDelta: 0.001
+          }
         }}
       >
         <h1 className="font-bold text-5xl max-w-5xl">
-          I&lsquo;m a UX/UI designer, passionate about design, tech and blockchain.
+          I&lsquo;m a UX/UI designer, passionate about <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">design, tech and blockchain.</span>
         </h1>
       </motion.div>
 
@@ -35,24 +41,17 @@ export default function HeroSection() {
 
       <ButtonPrimary label="Contact me" />
 
-      {/* <motion.div
-        animate={{
-          scale: [1, 2, 2, 1, 1],
-          rotate: [0, 0, 270, 270, 0],
-        }}
-        transition={{
-          delay: 0.5,
-          x: { duration: 1 },
-          default: { ease: "linear" },
-        }}
+      <motion.div 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: [0.5,1,0.5]}}
       >
         <Image
           src={bgHeroShape}
           width={1000}
           height={1000}
-          className="absolute bottom-0 right-0 opacity-[0.5]"
+          className='absolute bottom-0 right-0 opacity-[0.5]'
         />
-      </motion.div> */}
+      </motion.div>
     </div>
   );
 }
