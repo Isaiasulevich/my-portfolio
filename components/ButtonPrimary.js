@@ -2,7 +2,7 @@ import React from 'react'
 
 export const ButtonPrimary = (prop) => {
   return (
-    <button className='flex gap-4 px-8 py-4 rounded-full text-gray-900 bg-gray-50 text-gray-50 font-medium hover:bg-opacity-80 ' type={prop.type}>{prop.label}</button>
+    <button className='block max-w-2 gap-4 px-8 py-4 rounded-full text-zinc-900 bg-zinc-50 text-zinc-900 font-medium hover:bg-opacity-80 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300' type={prop.type} href={prop.link}>{prop.label}</button>
   )
 }
 
