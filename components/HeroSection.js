@@ -11,6 +11,7 @@ export default function HeroSection() {
       {/* MAIN TEXT */}
 
       <motion.div
+        className=""
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
@@ -39,17 +40,20 @@ export default function HeroSection() {
         </h1>
       </motion.div>
 
-      <ButtonPrimary label="Contact me" />
+      <ButtonPrimary label="Contact me" className="z-50"/>
 
       <motion.div 
       initial={{ opacity: 0 }}
       animate={{ opacity: [0.5,1,0.5]}}
+      transition={{repeat:'Infinity',
+                  duration: 4
+      }}
       >
         <Image
           src={bgHeroShape}
           width={1000}
           height={1000}
-          className='absolute bottom-0 right-0 opacity-[0.5]'
+          className='absolute bottom-0 -z-10 right-0 opacity-[0.5]'
         />
       </motion.div>
     </div>
