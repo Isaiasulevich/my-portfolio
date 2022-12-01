@@ -5,7 +5,7 @@ import ButtonPrimary from "./ButtonPrimary";
 export default function ContributionCard (prop) {
   return (
     <div>
-      <div className="max-w-sm bg-zinc-50 rounded-lg  dark:bg-zinc-700 text-left">
+      <div className="max-w-sm rounded-lg bg-zinc-700 text-left">
         <a href="#">
           <div className="w-full">
             <Image
@@ -17,16 +17,16 @@ export default function ContributionCard (prop) {
         </a>
         <div className="p-5">
           <a href="#">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-zinc-900 dark:text-white">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
               {prop.title}
             </h5>
           </a>
-          <p className="mb-3 font-normal text-zinc-700 dark:text-zinc-400">
+          <p className="mb-3 font-normal text-zinc-400">
             {prop.description}
           </p>
           <ButtonPrimary
           label='Read more'
-          link='wwww.google.com'
+          link={prop.link}
           />
           {/* <a
             href="#"
