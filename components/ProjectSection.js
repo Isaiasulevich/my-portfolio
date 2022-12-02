@@ -6,7 +6,7 @@ import RainTree from "../public/assets/img/RainTree-visualization-thumb.png";
 
 export default function ContactSection() {
   return (
-    <div className="flex flex-col items-center relative justify-center gap-8 text-center text-zinc-50 bg-zinc-800 py-48 px-48 sm:flex sm:flex-row">
+    <div className="flex flex-col items-start relative justify-start gap-8 text-center text-zinc-50 bg-zinc-800 py-48 px-48 sm:flex sm:flex-row">
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}

@@ -10,7 +10,9 @@ export default function ContactForm() {
 
   return (
     <div className="flex items-center text-zinc-50 justify-center mx-24 mt-20 z-50">
-      <form className=" flex flex-col gap-4w-96 max-w-8xl">
+
+      {/* REEVER ASK HOSTAGATOR */}
+      <form className=" flex flex-col gap-4w-96 max-w-8xl" action={`mailto:hello@isaiasulevich.me?body="${message}" `} encType="text/plain">
         <h1 className="font-medium text-5xl max-w-5xl">
           Let&#39;s get in touch!
         </h1>
