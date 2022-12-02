@@ -6,12 +6,12 @@ import bgHeroShape from "../public/assets/img/bg-shape-02.svg";
 
 export default function HeroSection() {
   return (
-    <div className=" relative flex flex-col items-center relative justify-center gap-8 text-center text-zinc-50 bg-zinc-900 py-48 px-48 bg-clip-border bg-gradient-to-b from-zinc-900 to-zinc-800 ">
+    <div className="relative flex flex-col items-center relative justify-center gap-8 text-center text-zinc-50 bg-zinc-900 py-48 px-48 bg-clip-border bg-gradient-to-b from-zinc-900 to-zinc-800 ">
 
       {/* MAIN TEXT */}
 
       <motion.div
-        className=""
+        className="z-10"
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
@@ -44,9 +44,9 @@ export default function HeroSection() {
 
       <motion.div 
       initial={{ opacity: 0 }}
-      animate={{ opacity: [0.5,1,0.5]}}
+      animate={{ opacity: [0.3,1,0.3]}}
       transition={{repeat:'Infinity',
-                  duration: 4
+                  duration: 3
       }}
       >
         <Image

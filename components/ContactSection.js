@@ -13,8 +13,10 @@ export default function ContactSection() {
       />
 
       <motion.div 
-      initial={{ opacity: 0 }}
       animate={{ opacity: [0.5,1,0.5]}}
+      transition={{repeat:'Infinity',
+                  duration: 3
+      }}
       >
         <Image
           src={bgHeroShape}
