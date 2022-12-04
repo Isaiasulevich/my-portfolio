@@ -3,10 +3,12 @@ import portfolioLogo from "../public/assets/img/portfolio-logo.svg";
 import Image from "next/image";
 import Link from "next/link";
 import ContactForm from "./ContactForm";
+import Banner from "./Banner";
 
 const Header = (prop) => {
   return (
-    <div className="sticky z-50 top-0">
+    <div className=" bg-blur-sm bg-zinc-900 bg-opacity-5 sticky z-50 top-0">
+      <Banner/>
      {/* CONTENT */}
       <div className="py-4 px-24 bg-zinc-900 flex justify-between items-center ">
         <Image src={portfolioLogo} alt="The best logo I ever created" />
