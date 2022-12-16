@@ -2,10 +2,14 @@ import portfolioLogo from "../public/assets/img/portfolio-logo.svg";
 import Image from "next/image";
 import Link from "next/link";
 import Banner from "./Banner";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import closeIcon from "../public/assets/img/close.svg";
+import { useClickOutside } from "../hooks/useClickOutside";
 
 const Header = (prop) => {
   const [clicked, setClicked] = useState(false);
+  const ref = useRef(null);
+  useClickOutside(ref, () => setClicked(false));
 
   return (
     <div className=" backdrop-blur-sm bg-zinc-900/20 sticky z-[10000] top-0">
@@ -14,10 +18,41 @@ const Header = (prop) => {
       <div className="py-4 px-24  flex justify-between items-center ">
         {/* LOGO */}
         <Image src={portfolioLogo} alt="The best logo I ever created" />
-        {/* DARWIN HAS TO EXPLAIN HOW TO MAKE IT CLOSE ITSELF WHEN CLICKONG OUTSIDE */}
+
         {clicked && (
-          <div className="bg-zinc-900 w-full h-auto py-20 px-10 text-zinc-50 absolute top-0 z-[10000]">
-            <Link href="/">Resume</Link>
+          <div
+            ref={ref}
+            className="bg-zinc-900 w-full h-auto flex flex-col justify-center py-20 px-10 text-zinc-50 absolute top-0 z-[1000] right-0 rounded-b-xl"
+          >
+            <div className="flex flex-row justify-end">
+              <div
+                onClick={() => setClicked(false)}
+                className="p-2 rounded-sm hover:bg-zinc-800"
+              >
+                <Image src={closeIcon} alt="close" />
+              </div>
+            </div>
+            <div className="flex flex-col">
+              <a
+                target="_blank"
+                href="https://docs.google.com/document/d/1ocuT2WMuLm571eN_vR8xp-rSbeiiQDhW1328TaYEFAo/edit"
+                className="inline-flex rounded-lg py-3 hover:text-indigo-500"
+              >
+                Resume
+              </a>
+              <Link
+                href={"/contact"}
+                className="inline-flex rounded-lg py-3 hover:text-indigo-500"
+              >
+                My Work
+              </Link>
+              <Link
+                href={"/contact"}
+                className="inline-flex rounded-lg py-3 hover:text-indigo-500"
+              >
+                Say Hello!
+              </Link>
+            </div>
           </div>
         )}
 
@@ -57,14 +92,13 @@ const Header = (prop) => {
             My Work
           </Link>
 
-          {/* It'll be a popup with my resume (api? and a button to download) */}
-
-          <Link
+          <a
+            target="_blank"
             href="https://docs.google.com/document/d/1ocuT2WMuLm571eN_vR8xp-rSbeiiQDhW1328TaYEFAo/edit"
             className="inline-flex rounded-lg py-3 hover:text-indigo-500"
           >
             Resume
-          </Link>
+          </a>
 
           <Link
             href={"/contact"}
