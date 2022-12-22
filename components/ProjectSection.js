@@ -32,7 +32,7 @@ export default function PorjectSection(prop) {
           {prop.description}
         </h1>
 
-        <ButtonPrimary label="Contact me" className="z-50 block w-40" />
+        <ButtonPrimary label="See case study" className="z-50 justify-center flex w-48" />
       </motion.div>
 
       <motion.div
