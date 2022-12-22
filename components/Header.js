@@ -34,7 +34,7 @@ const Header = (prop) => {
             </div>
             <div className="flex flex-col">
               <a
-                target="_blank"
+                target=""
                 href="https://docs.google.com/document/d/1ocuT2WMuLm571eN_vR8xp-rSbeiiQDhW1328TaYEFAo/edit"
                 className="inline-flex rounded-lg py-3 hover:text-indigo-500"
               >
@@ -93,7 +93,7 @@ const Header = (prop) => {
           </Link>
 
           <a
-            target="_blank"
+            target=""
             href="https://docs.google.com/document/d/1ocuT2WMuLm571eN_vR8xp-rSbeiiQDhW1328TaYEFAo/edit"
             className="inline-flex rounded-lg py-3 hover:text-indigo-500"
           >
