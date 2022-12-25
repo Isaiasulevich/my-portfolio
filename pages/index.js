@@ -13,9 +13,12 @@ export default function Home() {
   const { scrollYProgress } = useScroll();
 
   return (
+    
     <div className="bg-zinc-900">
+      <Head>
+        <title>Isaías Ulevich | Portfolio</title>
+      </Head>
       {/* <Banner/> */}
-
       <Header />
 
       <HeroSection />
@@ -37,7 +40,7 @@ export default function Home() {
         src={Beagle}
       />
 
-      <ContributionsSection />
+      {/* <ContributionsSection /> */}
 
       <ContactSection />
 
