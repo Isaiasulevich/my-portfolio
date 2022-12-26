@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function ContactSection() {
   return (
-    <div className="flex flex-row items-center relative justify-center gap-8 text-center text-zinc-50 bg-gradient-to-t from-zinc-900 to-zinc-800 py-48 px-48 bg-clip-border">
+    <div className="flex flex-row items-center relative justify-center gap-8 text-center text-zinc-50 bg-gradient-to-t from-zinc-900 to-zinc-800 px-12 py-20 md:py-48 md:px-48 bg-clip-border">
 
       <ContactForm 
       />
