@@ -13,7 +13,6 @@ const Header = (prop) => {
 
   return (
     <div className=" backdrop-blur-sm bg-zinc-900/20 sticky z-[10000] top-0">
-      <Banner />
       {/* NAV CONTENT */}
       <div className="py-4 px-24  flex justify-between items-center ">
         {/* LOGO */}
