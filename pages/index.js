@@ -8,6 +8,7 @@ import Gesprender from "../public/assets/img/gesprender-thumb.png";
 import Beagle from "../public/assets/img/beagle-thumb.png";
 import SecondhandAppThumb from "../public/assets/img/secondhand-app-thumb.png";
 import { motion, useScroll } from "framer-motion";
+import WhereIWorkSection from "../components/WhereIWorkSection";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -22,6 +23,8 @@ export default function Home() {
       <Header />
 
       <HeroSection />
+
+      <WhereIWorkSection />
 
       <ProjectSection
         title="Gesprender: Web Platform"
@@ -39,6 +42,7 @@ export default function Home() {
         description="bEagle is a place where you can publish and potentially find lost items, people, or pets."
         src={Beagle}
       />
+
 
       {/* <ContributionsSection /> */}
 

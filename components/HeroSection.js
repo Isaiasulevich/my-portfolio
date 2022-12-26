@@ -36,7 +36,7 @@ export default function HeroSection() {
         <h1 className="font-medium text-xl max-w-2xl">
           I&lsquo;m super curious, proactive, and do things with passion. I learn most
           of the stuff in a self-taught way. By the way, this website was
-          developed by me in Javascript 🤙🏽
+          developed by me in Javascript (Nextjs) 🤙🏽
         </h1>
       </motion.div>
 
