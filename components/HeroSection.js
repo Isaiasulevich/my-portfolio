@@ -6,7 +6,7 @@ import bgHeroShape from "../public/assets/img/bg-shape-02.svg";
 
 export default function HeroSection() {
   return (
-    <div className="relative flex flex-col items-center relative justify-center gap-8 text-center text-zinc-50 bg-zinc-900 py-48 px-48 bg-clip-border bg-gradient-to-b from-zinc-900 to-zinc-800 ">
+    <div className="relative mx-auto flex flex-col items-center relative justify-center gap-8 text-center text-zinc-50 bg-zinc-900 py-20 px-12 bg-clip-border bg-gradient-to-b from-zinc-900 to-zinc-800 md:py-48 md:px-48 ">
 
       {/* MAIN TEXT */}
 
