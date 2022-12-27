@@ -40,7 +40,7 @@ export default function HeroSection() {
         </h1>
       </motion.div>
 
-      <ButtonPrimary label="Contact me" className="z-50"/>
+      <ButtonPrimary label="Contact me" className="z-50" link={""}/>
 
       <motion.div 
       initial={{ opacity: 0 }}

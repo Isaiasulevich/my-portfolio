@@ -27,17 +27,22 @@ export default function Home() {
       <WhereIWorkSection />
 
       <ProjectSection
+        id='gesprender'
         title="Gesprender: Web Platform"
         description="Gesprender is a SaaS developed to help small and medium-sized businesses jump straight away into the digital world, showing business stats, reports, catalogues and much more."
         src={Gesprender}
+        link={'https://www.behance.net/gallery/144483353/Gesprender-UXUI-Case-Study'}
       />
 
       <ProjectSection
+        id='secondhandapp'
         title="SecondHand: IOS Mobile App"
         description="The client wanted to build something where the users could post pictures of the products, and, just like on Tinder, swipe to like them or not."
         src={SecondhandAppThumb}
+        link={'https://www.behance.net/gallery/139559963/SecondHand-App-UIUX-Case-Study'}
       />
       <ProjectSection
+        id='beagle'
         title="bEagle: Web Platform "
         description="bEagle is a place where you can publish and potentially find lost items, people, or pets."
         src={Beagle}

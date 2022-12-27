@@ -32,15 +32,15 @@ const Header = (prop) => {
               </div>
             </div>
             <div className="flex flex-col">
-              <a
-                target=""
+              <Link
+                target={'_blank'}
                 href="https://docs.google.com/document/d/1ocuT2WMuLm571eN_vR8xp-rSbeiiQDhW1328TaYEFAo/edit"
                 className="inline-flex rounded-lg py-3 hover:text-indigo-500"
               >
                 Resume
-              </a>
+              </Link>
               <Link
-                href={"/contact"}
+                href={"#gesprender"}
                 className="inline-flex rounded-lg py-3 hover:text-indigo-500"
               >
                 My Work
@@ -85,19 +85,20 @@ const Header = (prop) => {
 
         <div className="font-medium text-zinc-50 hidden md:flex gap-8 ">
           <Link
-            href={"/contact"}
+          
+            href={"#gesprender"}
             className="inline-flex rounded-lg py-3 hover:text-indigo-500"
           >
             My Work
           </Link>
 
-          <a
-            target=""
+          <Link
+            target={'_blank'}
             href="https://docs.google.com/document/d/1ocuT2WMuLm571eN_vR8xp-rSbeiiQDhW1328TaYEFAo/edit"
             className="inline-flex rounded-lg py-3 hover:text-indigo-500"
           >
             Resume
-          </a>
+          </Link>
 
           <Link
             href={"/contact"}
