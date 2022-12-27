@@ -58,8 +58,7 @@ export default function WhereIWorkSection() {
           <div className=" flex flex-col gap-2 text-zinc-50 max-w-sm">
             <h3 className="font-medium text-lg">Product designer | Full-time </h3>
             <h6 className="font-regular text-sm text-zinc-500">
-              I work in new feautres implemmentations and building/updating the
-              whole design system.
+            I work on new feature implementations and building/updating the whole design system.
             </h6>
           </div>
 
