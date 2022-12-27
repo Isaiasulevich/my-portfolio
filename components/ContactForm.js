@@ -62,7 +62,7 @@ export default function ContactForm() {
           />
         </div>
         <div className="mt-5">
-          <ButtonPrimary label="Send" type="submit" />
+          <ButtonPrimary className='items-center justify-center 'label="Send" type="submit" />
         </div>
       </form>
     </div>

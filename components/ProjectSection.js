@@ -25,22 +25,36 @@ export default function PorjectSection(prop) {
           },
         }}
       >
-        <h1 className="font-bold text-3xl">
-          {prop.title}
-        </h1>
+        <h1 className="font-bold text-3xl">{prop.title}</h1>
         <h1 className="font-regular text-lg text-zinc-500">
           {prop.description}
         </h1>
 
-        <ButtonPrimary label="See case study" className="z-50 justify-center flex w-48" />
+        <ButtonPrimary
+          link={prop.link}
+          label="See case study"
+          className="z-50 justify-center flex w-48"
+        />
       </motion.div>
 
       <motion.div
-      className="max-w-xl">
-        <Image
-          src={prop.src}
-          className="rounded-xl cover"
-        />
+        className="max-w-xl"
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          default: {
+            duration: 0.3,
+            ease: [0, 0.71, 0.2, 1.01],
+          },
+          scale: {
+            type: "spring",
+            damping: 5,
+            stiffness: 100,
+            restDelta: 0.001,
+          },
+        }}
+      >
+        <Image src={prop.src} className="rounded-xl cover" />
       </motion.div>
     </div>
   );
