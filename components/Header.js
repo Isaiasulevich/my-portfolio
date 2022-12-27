@@ -21,7 +21,7 @@ const Header = (prop) => {
         {clicked && (
           <div
             ref={ref}
-            className="backdrop-blur-3xl  bg-zinc-900/95 w-full h-auto flex flex-col justify-center py-20 px-10 text-zinc-50 absolute top-0 z-[1000] right-0 rounded-b-xl"
+            className="backdrop-blur-xl  bg-zinc-900/50 w-full h-auto flex flex-col justify-center py-6 px-12 text-zinc-50 absolute top-0 z-[1000] right-0 rounded-b-xl"
           >
             <div className="flex flex-row justify-end">
               <div
