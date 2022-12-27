@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function ContactSection() {
   return (
-    <div className="flex flex-row items-center relative justify-center gap-8 text-center text-zinc-50 bg-gradient-to-t from-zinc-900 to-zinc-800 px-12 py-20 md:py-48 md:px-48 bg-clip-border">
+    <div className="flex items-center mx-auto relative justify-center gap-8 text-center text-zinc-50 bg-gradient-to-t px-12 py-20 from-zinc-900 to-zinc-800 md:py-48 md:px-48 bg-clip-border">
 
       <ContactForm 
       />
@@ -15,7 +15,7 @@ export default function ContactSection() {
       <motion.div 
       animate={{ opacity: [0.5,1,0.5]}}
       transition={{repeat:'Infinity',
-                  duration: 3
+                  duration: 2
       }}
       >
         <Image
