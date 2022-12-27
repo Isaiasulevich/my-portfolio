@@ -8,14 +8,14 @@ import { ChevronRightIcon } from "@heroicons/react/24/solid";
 
 export default function WhereIWorkSection() {
   return (
-    <div className="relative flex flex-col items-center gap-12 mx-auto bg-zinc-900 py-20 px-20 bg-clip-border bg-gradient-to-b from-zinc-900 to-zinc-800 md:flex md:py-48 md:px-48  max-w-screen-2xl">
+    <div className="relative flex flex-col items-center gap-12 mx-auto bg-zinc-900 py-20 px-12 bg-clip-border bg-gradient-to-b from-zinc-900 to-zinc-800 md:flex md:py-48 md:px-48  max-w-screen-2xl">
          {/* TITLE */}
          <div>
             <h1 className="font-medium text-3xl text-zinc-500">
                 Currently working at
             </h1>
         </div>
-      <div className="flex items-top justify-center gap-12">
+      <div className="flex flex-col items-top justify-center gap-12 md:flex-row">
       {/* <div>
             <h1 className="font-medium text-3xl text-zinc-500">
                 Working at

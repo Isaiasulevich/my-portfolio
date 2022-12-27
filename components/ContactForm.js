@@ -9,11 +9,11 @@ export default function ContactForm() {
   console.log(email, message);
 
   return (
-    <div className="flex items-center py-12 px-12 items-center text-zinc-50 justify-center mx-auto  mt-20 z-50">
+    <div className="flex items-center items-center text-zinc-50 justify-center z-50">
 
       {/* REEVER ASK HOSTAGATOR */}
-      <form className=" flex flex-col gap-4 min-w-2xl max-w-5xl" action={`mailto:hello@isaiasulevich.me?body="${message}" `} encType="text/plain">
-        <h1 className="font-medium text-left text-5xl max-w-5xl">
+      <form className=" flex flex-col gap-4 min-w-3xl max-w-7xl" action={`mailto:hello@isaiasulevich.me?body="${message}" `} encType="text/plain">
+        <h1 className="font-medium text-left text-5xl">
           Let&#39;s get in touch!
         </h1>
 

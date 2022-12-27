@@ -46,7 +46,7 @@ export default function HeroSection() {
       initial={{ opacity: 0 }}
       animate={{ opacity: [0.3,1,0.3]}}
       transition={{repeat:'Infinity',
-                  duration: 3
+                  duration: 2
       }}
       >
         <Image
