@@ -22,7 +22,7 @@ export default function WhereIWorkSection() {
             </h1>
         </div> */}
         {/* DL CARD */}
-        <motion.div className="flex flex-col gap-4 max-w-2xl">
+        <motion.div className="flex flex-col text-center items-center justify-center  gap-4 max-w-2xl">
           {/* IMAGE */}
           <div className="flex items-center justify-center w-20 h-20 rounded-full bg-zinc-900 p-4 ">
             <Image className="" alt="Dabble Lab logo" src={DabbleLab} />
@@ -32,8 +32,7 @@ export default function WhereIWorkSection() {
           <div className=" flex flex-col gap-2 text-zinc-50 max-w-sm">
             <h3 className="font-medium text-lg">UX/UI Designer | Part-time </h3>
             <h6 className="font-regular text-sm text-zinc-500">
-              I mostly do UI/UX design but also code. I contributed to their
-              website.
+            I mostly do UI/UX design but also code. I collaborated on multiple diverse projects.
             </h6>
           </div>
 
@@ -48,9 +47,9 @@ export default function WhereIWorkSection() {
         </motion.div>
 
         {/* SEEDJ CARD */}
-        <motion.div className="flex flex-col gap-4 max-w-2xl">
+        <motion.div className="flex flex-col text-center items-center justify-center  gap-4 max-w-2xl">
           {/* IMAGE */}
-          <div className="flex items-center justify-center w-20 h-20 rounded-full bg-zinc-900 p-4 ">
+          <div className="flex items-center  justify-center w-20 h-20 rounded-full bg-zinc-900 p-4 ">
             <Image className="" alt="Dabble Lab logo" src={Seedj} />
           </div>
 
