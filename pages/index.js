@@ -14,7 +14,6 @@ export default function Home() {
   const { scrollYProgress } = useScroll();
 
   return (
-    
     <div className="bg-zinc-900">
       <Head>
         <title>Isaías Ulevich | Portfolio</title>
@@ -27,35 +26,41 @@ export default function Home() {
       <WhereIWorkSection />
 
       <ProjectSection
-        id='gesprender'
+        id="gesprender"
         title="Gesprender: Web Platform"
         description="Gesprender is a SaaS developed to help small and medium-sized businesses jump straight away into the digital world, showing business stats, reports, catalogues and much more."
         src={Gesprender}
-        link={'https://www.behance.net/gallery/144483353/Gesprender-UXUI-Case-Study'}
-        cta='View case study'
+        link={
+          "https://www.behance.net/gallery/144483353/Gesprender-UXUI-Case-Study"
+        }
+        cta="View case study"
       />
 
       <ProjectSection
-        id='secondhandapp'
+        id="secondhandapp"
         title="SecondHand: IOS Mobile App"
         description="The client wanted to build something where the users could post pictures of the products, and, just like on Tinder, swipe to like them or not."
         src={SecondhandAppThumb}
-        link={'https://www.behance.net/gallery/139559963/SecondHand-App-UIUX-Case-Study'}
-        cta='View case study'
+        link={
+          "https://www.behance.net/gallery/139559963/SecondHand-App-UIUX-Case-Study"
+        }
+        cta="View case study"
       />
       <ProjectSection
-        id='beagle'
+        id="beagle"
         title="bEagle: Web Platform "
         description="bEagle is a place where you can publish and potentially find lost items, people, or pets."
         src={Beagle}
-        link={"https://www.figma.com/file/vdoa1M58Cy9HqQ6xk5TgSP/%F0%9F%90%B6-bEagle?node-id=11%3A12732&t=GNUaTd7E1mujCQXu-1"}
-        cta='View Figma file'
+        link={
+          "https://www.figma.com/file/vdoa1M58Cy9HqQ6xk5TgSP/%F0%9F%90%B6-bEagle?node-id=11%3A12732&t=GNUaTd7E1mujCQXu-1"
+        }
+        cta="View Figma file"
       />
-
 
       {/* <ContributionsSection /> */}
 
       <ContactSection />
+      
 
       {/* <Toast/> */}
     </div>

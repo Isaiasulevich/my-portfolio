@@ -57,7 +57,7 @@ export default function ContactForm() {
             placeholder={"Your email"}
             maxLength="100"
             className={
-              "px-2 py-2 bg-zinc-800 placeholder-zinc-700 rounded-md font-regular text-sm  text-zinc-50 caret-indigo-200  focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 disabled:bg-zinc-800 disabled:text-zinc-700 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+              "px-2 py-2 bg-zinc-800 overflow-hidden placeholder-zinc-700 rounded-md font-regular text-sm  text-zinc-50 caret-indigo-200  focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 disabled:bg-zinc-800 disabled:text-zinc-700 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
             }
           />
         </div>
