@@ -40,6 +40,7 @@ export default function WhereIWorkSection() {
           <Link
             className="flex gap-2 items-center text-zinc-50 font-regular ease-in-out hover:text-purple-500"
             href={"https://www.dabblelab.com"}
+            target={'_blank'}
           >
             <p>Go to company profile</p>
             <ChevronRightIcon className="w-4 h-4 " />
@@ -66,6 +67,7 @@ export default function WhereIWorkSection() {
             className="flex gap-2 items-center text-zinc-50 font-regular ease-in-out hover:text-purple-500"
             href={"https://www.seedj.app"}
             rel="noopener noreferrer"
+            target={'_blank'}
           >
             <p>Go to company profile</p>
             <ChevronRightIcon className="w-4 h-4 " />
