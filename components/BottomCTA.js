@@ -8,7 +8,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 
-
 export default function BottomCTA() {
   return (
     <div className="flex flex-col  items-start sm:items-center gap-12 mx-auto justify-start sm:justify-center bg-zinc-900 py-20 px-12 bg-clip-border bg-gradient-to-b from-zinc-900 to-zinc-800 sm:flex-row md:gap-24 md:py-48 md:px-48  max-w-screen-2xl">
@@ -38,7 +37,7 @@ export default function BottomCTA() {
           </span>
         </h1>
         <h1 className="text-md samll sm:font-medium text-zinc-400 sm:text-xl max-w-2xl">
-          I'm open to new opportunities, preferably remote and also able to
+          I&apos;m open to new opportunities, preferably remote and also able to
           relocate anywhere in the world.
         </h1>
       </motion.div>
@@ -49,6 +48,7 @@ export default function BottomCTA() {
         <div className="flex gap-1 ">
           {/* LINKEDIN */}
           <a
+            rel="noopener noreferrer"
             className="p-2 rounded-lg hover:bg-zinc-800"
             target="_blank"
             href={"https://www.linkedin.com/in/isaiasulevich/"}
@@ -57,6 +57,7 @@ export default function BottomCTA() {
           </a>
           {/* GITHUB */}
           <a
+            rel="noopener noreferrer"
             className="p-2 rounded-lg hover:bg-zinc-800"
             target="_blank"
             href={"https://www.github.com/isaiasulevich/"}
@@ -65,6 +66,7 @@ export default function BottomCTA() {
           </a>
           {/* BEHANCE */}
           <a
+            rel="noopener noreferrer"
             className="p-2 rounded-lg hover:bg-zinc-800"
             target="_blank"
             href={"https://www.behance.net/isaiasulevich"}
@@ -75,14 +77,16 @@ export default function BottomCTA() {
 
         {/* LINK CTA */}
         <Link
-            className="flex shrink-0 gap-2 items-center pl-2 text-zinc-50 font-regular ease-in-out hover:text-purple-500"
-            href={"https://docs.google.com/document/d/1ocuT2WMuLm571eN_vR8xp-rSbeiiQDhW1328TaYEFAo/"}
-            target={'_blank'}
-          >
-            <p className="w-full">Download resume</p>
-            <ArrowUpRightIcon className="w-4 h-4 " />
-          </Link>
-
+          className="flex shrink-0 gap-2 items-center pl-2 text-zinc-50 font-regular ease-in-out hover:text-purple-500"
+          href={
+            "https://docs.google.com/document/d/1ocuT2WMuLm571eN_vR8xp-rSbeiiQDhW1328TaYEFAo/"
+          }
+          target={"_blank"}
+          passHref
+        >
+          <p className="w-full">Download resume</p>
+          <ArrowUpRightIcon className="w-4 h-4 " />
+        </Link>
       </div>
     </div>
   );

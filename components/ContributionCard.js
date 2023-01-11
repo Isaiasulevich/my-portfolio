@@ -6,7 +6,7 @@ export default function ContributionCard (prop) {
   return (
     <div>
       <div className="max-w-sm rounded-lg bg-zinc-700 text-left">
-        <a href="#">
+        <a rel="noopener noreferrer" href="#">
           <div className="w-full">
             <Image
               className="rounded-t-lg object-cover"
@@ -16,7 +16,7 @@ export default function ContributionCard (prop) {
           </div>
         </a>
         <div className="p-5">
-          <a href="#">
+          <a rel="noopener noreferrer" href="#">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
               {prop.title}
             </h5>
