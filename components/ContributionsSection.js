@@ -26,7 +26,7 @@ export default function PorjectSection() {
         <Card
           src={RainTree}
           title="RainTree visualization - Web3"
-          description="I'm super curious, proactive, and do things with passion. I learn most
+          description="I&apos;m super curious, proactive, and do things with passion. I learn most
       of the stuff in a self-taught way. By the way, this website was
       developed by me in Javascript 🤙🏽"
         />
@@ -50,7 +50,7 @@ export default function PorjectSection() {
         <Card
           src={RainTree}
           title="Node Auditor - POKT Network"
-          description="I'm super curious, proactive, and do things with passion. I learn most
+          description="I&apos;m super curious, proactive, and do things with passion. I learn most
       of the stuff in a self-taught way. By the way, this website was
       developed by me in Javascript 🤙🏽"
         />
@@ -74,7 +74,7 @@ export default function PorjectSection() {
         <Card
           src={RainTree}
           title="Lens Protocol - Graph"
-          description="I'm super curious, proactive, and do things with passion. I learn most
+          description="I&apos;m super curious, proactive, and do things with passion. I learn most
       of the stuff in a self-taught way. By the way, this website was
       developed by me in Javascript 🤙🏽"
         />
