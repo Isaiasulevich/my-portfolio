@@ -28,13 +28,13 @@ export default function HeroSection() {
         }}
       >
         <h1 className="font-bold text-5xl max-w-5xl">
-          I&lsquo;m a UX/UI designer, passionate about <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">design, tech and blockchain.</span>
+          I'm a UX/UI designer, passionate about <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">design, tech and blockchain.</span>
         </h1>
       </motion.div>
 
       <motion.div>
         <h1 className="font-medium text-xl max-w-2xl">
-          I&lsquo;m super curious, proactive, and do things with passion. I learn most
+          I'm super curious, proactive, and do things with passion. I learn most
           of the stuff in a self-taught way. By the way, this website was
           developed by me in Javascript (Nextjs) 🤙🏽
         </h1>
