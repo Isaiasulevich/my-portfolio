@@ -42,7 +42,7 @@ export default function WhereIWorkSection() {
             href={"https://www.dabblelab.com"}
             target={'_blank'}
           >
-            <p>Go to company profile</p>
+            <p>Go to company website</p>
             <ChevronRightIcon className="w-4 h-4 " />
           </Link>
         </motion.div>
@@ -69,7 +69,7 @@ export default function WhereIWorkSection() {
             rel="noopener noreferrer"
             target={'_blank'}
           >
-            <p>Go to company profile</p>
+            <p>Go to company website</p>
             <ChevronRightIcon className="w-4 h-4 " />
           </Link>
         </motion.div>
