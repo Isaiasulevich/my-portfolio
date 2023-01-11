@@ -9,6 +9,7 @@ import Beagle from "../public/assets/img/beagle-thumb.png";
 import SecondhandAppThumb from "../public/assets/img/secondhand-app-thumb.png";
 import { motion, useScroll } from "framer-motion";
 import WhereIWorkSection from "../components/WhereIWorkSection";
+import BottomCTA from "../components/BottomCTA.js";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -57,10 +58,15 @@ export default function Home() {
         cta="View Figma file"
       />
 
+      {/* <Masonry
+      /> */}
+
+
+
       {/* <ContributionsSection /> */}
 
-      <ContactSection />
-      
+      {/* <ContactSection /> */}
+      <BottomCTA/>
 
       {/* <Toast/> */}
     </div>
