@@ -1,10 +1,10 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from 'next/link';
+import React from 'react';
 
 export const ButtonPrimary = (prop) => {
   return (
     
-    <Link target={'_blank'} className={prop.className+" flex gap-4 px-8 py-4 rounded-full text-zinc-900 bg-zinc-50 font-medium text-center justify-center items-center  hover:bg-opacity-80 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"} type={prop.type} href={prop.link ? prop.link : '/' }  >
+    <Link target={'_blank'} className={prop.className+" flex gap-4 px-8 py-4 rounded-full text-zinc-900 bg-zinc-50 font-medium text-center justify-center items-center  hover:bg-opacity-80 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"} type={prop.type} href={prop.link ? prop.link : '/' } passHref >
       {prop.label}</Link>
 
     // {props.linkAlt && props.ctaAlt && (
