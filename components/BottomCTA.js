@@ -48,7 +48,7 @@ export default function BottomCTA() {
         <div className="flex gap-1 ">
           {/* LINKEDIN */}
           <a
-            rel="noopener noreferrer"
+            rel="noreferrer"
             className="p-2 rounded-lg hover:bg-zinc-800"
             target="_blank"
             href={"https://www.linkedin.com/in/isaiasulevich/"}
@@ -57,7 +57,7 @@ export default function BottomCTA() {
           </a>
           {/* GITHUB */}
           <a
-            rel="noopener noreferrer"
+            rel="noreferrer"
             className="p-2 rounded-lg hover:bg-zinc-800"
             target="_blank"
             href={"https://www.github.com/isaiasulevich/"}
@@ -66,7 +66,7 @@ export default function BottomCTA() {
           </a>
           {/* BEHANCE */}
           <a
-            rel="noopener noreferrer"
+            rel="noreferrer"
             className="p-2 rounded-lg hover:bg-zinc-800"
             target="_blank"
             href={"https://www.behance.net/isaiasulevich"}
