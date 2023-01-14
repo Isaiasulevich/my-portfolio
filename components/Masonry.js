@@ -1,5 +1,5 @@
-import Gallery from "next-gallery"
-import masonryItems from "./jsondata/masonryItems.json"
+import Gallery from "next-gallery";
+import masonryItems from "./jsondata/masonryItems.json";
 
 const images = {masonryItems.map(obj,i)}
 
