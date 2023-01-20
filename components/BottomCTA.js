@@ -31,7 +31,7 @@ export default function BottomCTA() {
         }}
       >
         <h1 className="font-bold text-3xl text-zinc-50 sm:text-5xl max-w-5xl">
-          Let's get in touch!{" "}
+          Let&apos;s get in touch!{" "}
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
             always up for new challenges.
           </span>
