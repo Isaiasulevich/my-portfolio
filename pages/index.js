@@ -7,9 +7,9 @@ import ProjectSection from "../components/ProjectSection";
 import Gesprender from "../public/assets/img/gesprender-thumb.png";
 import Beagle from "../public/assets/img/beagle-thumb.png";
 import SecondhandAppThumb from "../public/assets/img/secondhand-app-thumb.png";
-import { motion, useScroll } from "framer-motion";
 import WhereIWorkSection from "../components/WhereIWorkSection";
 import BottomCTA from "../components/BottomCTA.js";
+import { motion, useScroll } from "framer-motion";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -17,14 +17,15 @@ export default function Home() {
   return (
     <div className="bg-zinc-900">
       <Head>
-        <title>Isaías Ulevich | Portfolio</title>
+        <title>{`Isaías Ulevich | Portfolio`}</title>
       </Head>
       {/* <Banner/> */}
       <Header />
 
       <HeroSection />
 
-      <WhereIWorkSection />
+      <WhereIWorkSection
+      className="-z-10" />
 
       <ProjectSection
         id="gesprender"
@@ -35,6 +36,7 @@ export default function Home() {
           "https://www.behance.net/gallery/144483353/Gesprender-UXUI-Case-Study"
         }
         cta="View case study"
+        isReverse="true"
       />
 
       <ProjectSection
@@ -57,18 +59,7 @@ export default function Home() {
         }
         cta="View Figma file"
       />
-
-      {/* <Masonry
-      /> */}
-
-
-
-      {/* <ContributionsSection /> */}
-
-      {/* <ContactSection /> */}
-      <BottomCTA/>
-
-      {/* <Toast/> */}
+      <BottomCTA />
     </div>
   );
 }

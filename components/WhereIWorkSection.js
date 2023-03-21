@@ -8,7 +8,7 @@ import { ChevronRightIcon } from "@heroicons/react/24/solid";
 
 export default function WhereIWorkSection() {
   return (
-    <div className="relative flex flex-col items-center gap-12 mx-auto bg-zinc-900 py-20 px-12 bg-clip-border bg-gradient-to-b from-zinc-900 to-zinc-800 md:flex md:py-48 md:px-48  max-w-screen-2xl">
+    <div className="relative flex flex-col items-center gap-12 mx-auto  py-20 px-12   md:flex md:py-24 md:px-48  max-w-screen-2xl">
          {/* TITLE */}
          <div>
             <h1 className="font-medium text-3xl text-zinc-500">
@@ -24,7 +24,7 @@ export default function WhereIWorkSection() {
         {/* DL CARD */}
         <motion.div className="flex flex-col text-center items-center justify-center  gap-4 max-w-2xl">
           {/* IMAGE */}
-          <div className="flex items-center justify-center w-20 h-20 rounded-full bg-zinc-900 p-4 ">
+          <div className="flex items-center justify-center w-20 h-20 rounded-full bg-zinc-800 p-4 ">
             <Image className="" alt="Dabble Lab logo" src={DabbleLab} />
           </div>
 
@@ -51,7 +51,7 @@ export default function WhereIWorkSection() {
         {/* SEEDJ CARD */}
         <motion.div className="flex flex-col text-center items-center justify-center  gap-4 max-w-2xl">
           {/* IMAGE */}
-          <div className="flex items-center  justify-center w-20 h-20 rounded-full bg-zinc-900 p-4 ">
+          <div className="flex items-center  justify-center w-20 h-20 rounded-full bg-zinc-800 p-4 ">
             <Image className="" alt="Dabble Lab logo" src={Seedj} />
           </div>
 

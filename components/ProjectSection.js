@@ -3,13 +3,25 @@ import { motion } from "framer-motion";
 import ButtonPrimary from "./ButtonPrimary";
 import Image from "next/image";
 
-export default function PorjectSection(prop) {
+export default function ProjectSection(props) {
+  const isReverse = props.isReverse || false;
+  const imageClass = `max-w-xl ${
+    isReverse ? "order-1" : "order-2"
+  } md:order-1`;
+
+  const contentClass = `z-10 flex flex-col gap-8 max-w-xl ${
+    isReverse ? "order-2" : "order-1"
+  } md:order-2`;
+
   return (
-    <div id={prop.id} className="relative mx-auto flex flex-col-reverse items-center relative justify-center gap-8 text-left text-zinc-50 bg-zinc-900 py-20 px-12 bg-clip-border bg-gradient-to-b from-zinc-900 to-zinc-800  max-w-screen-2xl md:flex md:flex-row md:py-48 md:px-48 ">
+    <div
+      id={props.id}
+      className="relative mx-auto flex flex-col-reverse items-center relative justify-center gap-8 text-left text-zinc-50 py-20 px-12 bg-clip-border  max-w-screen-2xl md:flex md:flex-row md:py-24 md:px-48 "
+    >
       {/* MAIN TEXT */}
 
       <motion.div
-        className="z-10 flex flex-col gap-8 max-w-xl"
+        className={contentClass}
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
@@ -25,20 +37,20 @@ export default function PorjectSection(prop) {
           },
         }}
       >
-        <h1 className="font-bold text-3xl">{prop.title}</h1>
+        <h1 className="font-bold text-3xl">{props.title}</h1>
         <h1 className="font-regular text-lg text-zinc-500">
-          {prop.description}
+          {props.description}
         </h1>
 
         <ButtonPrimary
-          link={prop.link}
-          label={prop.cta}
+          link={props.link}
+          label={props.cta}
           className="z-50 justify-center flex w-48"
         />
       </motion.div>
 
       <motion.div
-        className="max-w-xl"
+        className={imageClass}
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
@@ -54,7 +66,7 @@ export default function PorjectSection(prop) {
           },
         }}
       >
-        <Image src={prop.src} className="rounded-xl cover" />
+        <Image src={props.src} className="rounded-xl cover" />
       </motion.div>
     </div>
   );

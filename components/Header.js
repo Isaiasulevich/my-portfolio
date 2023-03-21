@@ -36,7 +36,7 @@ const Header = (prop) => {
               
                 target={'_blank'}
                 href="https://docs.google.com/document/d/1ocuT2WMuLm571eN_vR8xp-rSbeiiQDhW1328TaYEFAo/edit"
-                className="inline-flex rounded-lg py-3 hover:text-indigo-500"
+                className="inline-flex rounded-lg py-3 px-2 hover:text-indigo-500 hover:bg-zinc-900"
               >
                 Resume
               </Link>
@@ -88,7 +88,7 @@ const Header = (prop) => {
           <Link
           
             href={"#gesprender"}
-            className="inline-flex rounded-lg py-3 hover:text-indigo-500"
+            className="inline-flex rounded-lg py-3 px-3 transition duration-200 ease-in-out hover:bg-zinc-700/20 hover:text-indigo-500"
           >
             My Work
           </Link>
@@ -96,14 +96,14 @@ const Header = (prop) => {
           <Link
             target={'_blank'}
             href="https://docs.google.com/document/d/1ocuT2WMuLm571eN_vR8xp-rSbeiiQDhW1328TaYEFAo/edit"
-            className="inline-flex rounded-lg py-3 hover:text-indigo-500"
+            className="inline-flex rounded-lg py-3 px-3 transition duration-200 ease-in-out hover:bg-zinc-700/20 hover:text-indigo-500"
           >
             Resume
           </Link>
 
           <Link
             href={"/contact"}
-            className="inline-flex rounded-lg py-3 hover:text-indigo-500"
+            className="inline-flex rounded-lg py-3 px-3 transition duration-200 ease-in-out hover:bg-zinc-700/20 hover:text-indigo-500"
           >
             Say Hello!
           </Link>
